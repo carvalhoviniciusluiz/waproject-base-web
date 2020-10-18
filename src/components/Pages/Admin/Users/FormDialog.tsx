@@ -107,6 +107,8 @@ const FormDialog = memo((props: IProps) => {
 
               <TextField label='Email' name='email' type='email' formik={formik} />
 
+              <br />
+
               <FormControl component='fieldset' error={formik.touched.roles && !!formik.errors.roles}>
                 <FormLabel component='legend'>Acesso</FormLabel>
                 {formik.touched.roles && !!formik.errors.roles && (
